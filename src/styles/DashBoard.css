@@ -1,0 +1,46 @@
+.main-dashboard {
+    --gap: 10px;
+    --rowone: 30%;
+    --rowthree: 20%;
+
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.box {
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num-solve {
+    width: var(--rowone);
+}
+
+.difficulties {
+    width: calc(100% - var(--rowone) - var(--gap));   
+}
+
+.rating-chart {
+    width: 100%;
+}
+
+.skill {
+    width: var(--rowthree); 
+}
+
+.recent-solve {
+    width: calc(100% - var(--rowthree) - var(--gap));
+}
+
+.test {
+    width: 100%;
+}

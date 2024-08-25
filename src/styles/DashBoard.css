@@ -52,11 +52,53 @@ svg {
 
     position: relative;
     height: 100%;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
 
     /* padding: 2px; */
 }
 
 .question-percentage {
     fill: violet;
+}
+
+.input-wrapper {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+.input-wrapper button {
+    background-color: #707070;
+    border-radius: 3px;
+    outline: none;
+    border: 0px;
+    margin-left: 3px;
+    color: white;
+
+    font-family: "Varela Round";
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+.input-wrapper button:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+#username-input {
+    background-color: #707070;
+    border-radius: 3px;
+    border: 0px;
+    outline: none;
+    height: 30px;
+
+    font-family: "Varela Round";
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+#username-input:focus {
+    border: 0px;
 }

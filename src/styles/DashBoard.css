@@ -45,22 +45,6 @@
     width: 100%;
 }
 
-svg {
-    /* border: 2px white solid; */
-    /* border-radius: 10px; */
-    box-sizing: border-box;
-
-    position: relative;
-    height: 100%;
-    /* aspect-ratio: 1; */
-
-    /* padding: 2px; */
-}
-
-.question-percentage {
-    fill: violet;
-}
-
 .input-wrapper {
     display: flex;
     margin: auto;

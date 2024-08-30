@@ -24,8 +24,7 @@ export default function BarChart({
           return (
             <>
               <path
-                d={`M${(i + 1) * (columnWidth + gap)} 0 L${(i + 1) * (columnWidth + gap)
-                  } ${height}`}
+                d={`M${(i + 1) * (columnWidth + gap)} 0 L${(i + 1) * (columnWidth + gap)} ${height}`}
                 style={{
                   strokeWidth: columnWidth,
                   stroke: "transparent",
@@ -40,8 +39,7 @@ export default function BarChart({
                 }}
               />
               <path
-                d={`M${(i + 1) * (columnWidth + gap)} ${height} L${(i + 1) * (columnWidth + gap)
-                  } ${height - colHeight}`}
+                d={`M${(i + 1) * (columnWidth + gap)} ${height} L${(i + 1) * (columnWidth + gap)} ${height - colHeight}`}
                 style={{
                   strokeWidth: columnWidth,
                   stroke: color,

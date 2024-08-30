@@ -1,48 +1,51 @@
 .main-dashboard {
-    --gap: 10px;
-    --rowone: 20%;
-    --rowthree: 30%;
-
-    padding-top: 20px;
     width: 70%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap);
+    height: 120vh;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+}
+
+#public_profile {
+    grid-area: 1 / 1 / 5 / 4;
+}
+
+#progress_circle {
+    grid-area: 1 / 4 / 3 / 6;
+}
+
+#progress_bars {
+    grid-area: 1 / 6 / 3 / 10;
+}
+
+#submission_tracker {
+    grid-area: 3 / 4 / 5 / 10;
+}
+
+#skill_stats {
+    grid-area: 5 / 1 / 11 / 3;
+}
+
+#ratings {
+    grid-area: 5 / 3 / 7 / 10; 
+}
+
+#recent_submission {
+    grid-area: 7 / 3 / 11 / 10;
 }
 
 .box {
     background-color: rgb(70, 70, 70);
     border-radius: 10px;
-    height: 200px;
+    box-sizing: border-box;
+    padding: 10px;
 
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.num-solve {
-    width: var(--rowone);
-}
-
-.difficulties {
-    width: calc(100% - var(--rowone) - var(--gap));   
-}
-
-.rating-chart {
-    width: 100%;
-}
-
-.skill {
-    width: var(--rowthree); 
-}
-
-.recent-solve {
-    width: calc(100% - var(--rowthree) - var(--gap));
-}
-
-.test {
-    width: 100%;
+    justify-content: center; */
 }
 
 .input-wrapper {

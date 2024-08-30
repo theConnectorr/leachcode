@@ -11,7 +11,7 @@ export default function DashBoard() {
 
   useEffect(() => {
     const go = async (username) => {
-      const response = await fetch(`https://graphql-proxy-server.vercel.app/user/public_profile?username=${username}`);
+      const response = await fetch(`https://graphql-proxy-server.vercel.app/api/user/public_profile?username=${username}`);
       const json = await response.json();
 
       setRes(JSON.stringify(json, null, 4));
@@ -24,7 +24,7 @@ export default function DashBoard() {
 
   useEffect(() => {
     const go = async () => {
-      const response = await fetch(`https://graphql-proxy-server.vercel.app/contest_rating_histogram`);
+      const response = await fetch(`https://graphql-proxy-server.vercel.app/api/global/contest_rating_histogram`);
       const json = await response.json();
 
       setHistogram(json.data.contestRatingHistogram);

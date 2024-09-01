@@ -5,12 +5,13 @@ import ProgressCircle from "../components/ProgressCircle";
 import PublicProfile from "../components/PublicProfile";
 
 export default function DashBoard() {
-  const [username, setUsername] = useState(localStorage.getItem("username") || "");
+  const [username, setUsername] = useState(localStorage.getItem("username"));
 
   const submitHandler = (e) => {
     e.preventDefault();
     localStorage.setItem("username", e.target.firstChild.value);
     setUsername(e.target.firstChild.value);
+    console.log("changed");
   };
 
   return (
